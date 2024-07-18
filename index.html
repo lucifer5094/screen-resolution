@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Screen Resolution</title>
+    <style>
+        body {
+            text-align: center;
+            margin: auto;
+            padding: 5%;
+        }
+        h1 {
+            font-size: 30px;
+        }
+        h1, p {
+            font-family: sans-serif;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Get screen width and height
+        var screenWidth = window.screen.width;
+        var screenHeight = window.screen.height;
+
+        // Display screen resolution
+        console.log("Screen Width: " + screenWidth + " pixels");
+        console.log("Screen Height: " + screenHeight + " pixels");
+
+        // Optionally display it on the webpage
+        document.body.innerHTML = "<h1>Screen Resolution: " + screenWidth + " x " + screenHeight + " pixels</h1>";
+    </script>
+</body>
+</html>
